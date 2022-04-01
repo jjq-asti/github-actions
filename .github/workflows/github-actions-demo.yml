@@ -14,4 +14,6 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - name: Install pip
+        run: sudo apt install python3-pip
       - run : echo "This job's status is ${{ job.status }}."
